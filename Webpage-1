@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login page</title>
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-image: url('https://5.imimg.com/data5/HP/II/EM/SELLER-51630638/bms-college-of-engineering-bmsce-direct-admission-2019-500x500.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            background-color: #597c5d;
+            color: orange;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .center-button {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form {
+            border: 3px solid #f8f0f0;
+            width: 400px;
+            margin-top: 50px;
+            background-color: rgba(213, 215, 216, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type=text], input[type=password] {
+            width: 80%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: block;
+            border: 2px solid rgb(99, 136, 99);
+            box-sizing: border-box;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            width: 80%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h2>Student Login Form</h2>
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit" class="center-button">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+            <button type="button" class="cancelbtn">Cancel</button>
+            Forgot <a href="#">password?</a>
+        </div>
+    </form>
+</body>
+</html>
