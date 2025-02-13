@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Hire Hub - Helping you land your dream job.">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="main_page.css">  
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="#">Hire<span>Hub.</span></a>
+      </div>
+      <ul>
+        <li><a href="javascript:void(0);" onclick="showPage('home')">Home</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('about')">About</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('services')">Services</a></li>
+        <li><a href="javascript:void(0);" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+      <div class="buttons">
+        <a href="login_page.html" target="_blank" class="login">Log in</a>
+        <a href="register.html" target="_blank" class="btn">Register</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div id="home" class="page">
+        <h2>Hello,<br>This is Hire Hub</h2><br>
+        <h4>Welcome to HireHub - Your Gateway to Successful Placements</h4>
+        <p>Get ready for your dream job with HireHub's comprehensive placement preparation platform.<br>
+          Whether you’re a student preparing for your first internship or a graduate seeking your ideal full-time role, HireHub offers all the tools, guidance, and resources you need to succeed in the competitive job market.</p>
+      </div>
+
+      <div id="about" class="page" style="display:none;">
+        <h2>About Us</h2>
+        <p><strong>HireHub</strong> helps job seekers with personalized support, guidance, and tools to land their dream jobs.</p>
+      
+        <h3>Mission</h3>
+        <p>Making career success accessible with tailored job search services.</p>
+      
+        <h3>Vision</h3>
+        <p>To guide job seekers to success in their careers worldwide.</p>
+      
+        <h3>Values</h3>
+        <ul>
+          <li>Integrity</li>
+          <li>Innovation</li>
+          <li>Commitment</li>
+        </ul>
+      </div>
+
+      <div id="services" class="page" style="display:none;">
+        <h2>Our Services</h2>
+        <ul>
+          <li><h4>Resume Building</h4></li>
+          <li><h4>Interview Coaching</h4></li>
+          <li><h4>Mock Tests and Quizzes</h4></li>
+          <li><h4>Career Counseling</h4></li>
+        </ul>
+      </div>
+
+      <div id="contact" class="page" style="display:none;">
+        <h2>Contact Us</h2>
+        <p><h3>Have questions? Reach out to us at:</h3></p>
+        <p><h3>Email: contact@hirehub.com</h3></p>
+        <p><h4>Phone: 123-456-7890</h4></p>
+      </div>
+    </div>
+
+    <div class="link">
+      <a href="#" class="hire">ALL THE BEST</a>
+    </div>
+  </div>
+
+  <div class="Home">
+    <p></p>
+  </div>
+
+  <script>
+    // Function to show the corresponding page section when clicked in the navigation
+    function showPage(pageId) {
+      // Hide all pages first
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(function(page) {
+        page.style.display = 'none';
+      });
+
+      // Show the selected page
+      const activePage = document.getElementById(pageId);
+      if (activePage) {
+        activePage.style.display = 'block';
+      }
+    }
+
+    // Show the home page by default when the page loads
+    window.onload = function() {
+      showPage('home');
+    };
+  </script>
+</body>
+</html>

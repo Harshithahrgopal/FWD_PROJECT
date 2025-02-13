@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Selection</title>
+    <link rel="stylesheet" href="cominfo.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Hire<span>Hub.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="main_page.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Box (Company List) -->
+        <div class="box">
+            <h3>Company List</h3>
+            <ul class="company-list" id="company-list">
+                <!-- Companies will be dynamically populated here -->
+            </ul>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button class="button" onclick="moveToRight()"> &gt;&gt; </button>
+            <button class="button" onclick="moveToLeft()"> &lt;&lt; </button>
+        </div>
+
+        <!-- Right Box (Selected Companies) -->
+        <div class="box">
+            <h3>Selected Companies</h3>
+            <ul class="selected-companies">
+                <!-- Selected companies will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button class="submit-btn" onclick="submitSelection()">Submit</button>
+
+    <script src="cominfo.js"></script>
+</body>
+</html>

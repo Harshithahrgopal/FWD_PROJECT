@@ -1,0 +1,208 @@
+/* Remove scrollbar for the entire page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hides the browser's default scrollbar */
+}
+
+/* Add a full-screen background */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/background-wave-minimalist-modern-style_483537-5220.jpg');
+    background-size: cover;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 8px 0px;
+    display: flex;
+    align-items: right;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: right;
+}
+
+.hire {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.hub {
+    color: rgb(255, 38, 0);
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+a {
+    margin-left: 100px;
+    font-size: 16px;
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.vertical-line {
+    width: 800px;
+    height: 5px;
+    background-color: rgba(11, 12, 14, 0.487);
+    margin-left: 300px;
+    margin-top: 0px;
+}
+
+.user-icon {
+    font-size: 20px;
+    margin-left: 40px;
+    color: aliceblue;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.341);
+    border-radius: 50%;
+    padding: 12px;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* Test container (left + right) styling */
+.test-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    margin: 15px auto;
+    max-width: 1600px;
+    margin-top: 5px;
+    height: 100px;
+}
+
+.left {
+    flex: 1;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-right: 30px;
+    margin-left: 20px;
+    color: rgba(4, 17, 4, 0.934);
+}
+
+.text {
+    font-size: 20px;
+    color: black;
+    height: 1px;
+    margin-bottom: 40px;
+}
+
+.right {
+    display: block; /* Ensures stacking vertically */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+}
+.right p{
+    margin-bottom: 10px;
+}
+
+.right button {
+    padding: 8px 15px;
+    background-color: #005f60;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+}
+
+.right button:hover {
+    background-color: #13d253;
+}
+
+/* Question box with scrolling */
+.question-box {
+    margin: 15px auto;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+    background-color: #014b4de7;
+    max-height: 320px;  /* Set the height limit for scrolling */
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;   /* Allows scrolling when content exceeds the box size */
+    width: 55%;
+}
+.question-box::-webkit-scrollbar{
+    display:none;
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.options {
+    margin-left: 15px;
+}
+
+.option {
+    margin: 4px 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.round-button {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .round-button {
+    background-color: #4CAF50;
+}
+
+label {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Submit button container */
+.submit-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px;  /* Adds space between questions and the button */
+}
+
+.submit-container button {
+    width: 20%;  /* Adjusts button width to 80% of the container */
+    padding: 12px;
+    background-color: #005f60;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.submit-container button:hover {
+    background-color: #13d253;
+}

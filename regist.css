@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background:url('https://img.freepik.com/free-vector/background-wave-minimalist-modern-style_483537-5220.jpg') center/cover no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.container {
+  justify-content: center;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 800px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 20px 0;
+  position: relative;
+}
+.box + .box {
+  margin-left: 20px; /* Add margin between the boxes */
+}
+.box {
+  width: calc(40% - 10px);
+  background-color: #005f60;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  height: 290px; 
+}
+a {
+  text-decoration: none;
+}
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+.divider {
+  width: 2px;
+  background-color: #ddd;
+  height: auto;
+  margin: 0 20px;
+  align-self: stretch;
+}
+
+.register-btn {
+  margin-top: -200px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-btn:hover {
+  background-color: #222;
+}

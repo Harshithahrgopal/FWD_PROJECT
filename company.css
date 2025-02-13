@@ -1,0 +1,115 @@
+/* General Reset */
+body {
+  height: 100%;
+  margin: 0;
+  background: url('https://img.freepik.com/free-vector/background-wave-minimalist-modern-style_483537-5220.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: white;
+}
+
+.logo a {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  color: red;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  color: #e03c8a;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+main {
+  margin-top: -80px;
+}
+
+.intro {
+  margin-top: -500px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.tiers {
+  margin-top: -48px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  height: fit-content;
+}
+
+.tier {
+  background-color: #056567;
+  width: 29%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+  overflow-y: auto; /* Allow scrolling if content exceeds the box */
+  max-height: 380px; /* Set a maximum height for the tier boxes */
+}
+
+.tier h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tier div {
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.tier div p {
+  margin: 0.5rem 0;
+}
+
+.tier div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Add some space above the button */
+}
+
+.select-companies-btn {
+  background-color: #005f60; /* Button color */
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
